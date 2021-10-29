@@ -16,9 +16,9 @@
 }
 
 body {
-    background: url("../images/league.png");
+    background: url("../images/league-2.png");
 
-    background-size: 1920px 1140px;
+    background-size: 1920px 1280px;
     background-repeat: no-repeat;
     font-family: 'AmidalafontRegular';   
     color: var(--main-color);   
@@ -46,11 +46,15 @@ h3 {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 65px;
 }
 
 .seeding__box {
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.btn-container {
+    padding-left: 14px;
 }
 
 #btn {
@@ -68,7 +72,7 @@ h3 {
 
     transition: var(--timing-function) var(--trans-duration);
 
-    margin-bottom: 220px;
+    margin-bottom: 210px;
 }
 
 #btn:hover {
@@ -79,11 +83,14 @@ h3 {
 
 #random-number { 
     color: var(--main-color);   
-    font-size: 30px
+    font-size: 18px;
+    padding-left: 15px;
 }
 
 .footer {
     margin-top: 470px;
+    padding-top: 0;
+    padding-bottom: 50px;
     padding-left: 35px;
 
     font-size: 22px;

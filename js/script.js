@@ -22,16 +22,21 @@ function createArrayOfNumbers(start, end) {
     return myArray;
 }
 
-let numbersArray = createArrayOfNumbers(1, 32);
+
+let numbersArray = createArrayOfNumbers(1, 16);
+
 
 btn.addEventListener("click", () => {
     if (numbersArray == 0) {
         output.innerHTML = "All players have just been assigned their opponents!";
+        output.style.fontSize = '18px';
         return;
     }
     let randomIndex = getRandomNumber(0, numbersArray.length - 1);
     let randomNumber = numbersArray[randomIndex];
     numbersArray.splice(randomIndex, 1);
+    output.style.fontSize = '30px';
+    output.style.marginBottom = '30px';
 
     output.innerHTML = randomNumber;
 })
