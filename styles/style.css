@@ -1,0 +1,101 @@
+:root {
+      --main-color: #ffffffd7;
+      --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      --trans-duration: 550ms;
+}
+
+@font-face {
+  font-family: "AmidalafontRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("AmidalafontRegular"),
+
+       url("../fonts/AmidalafontRegular.otf") format("otf"),
+
+       url("../fonts/AmidalaFontRegular.ttf") format("ttf");
+}
+
+body {
+    background: url("../images/league.png");
+
+    background-size: 1920px 1140px;
+    background-repeat: no-repeat;
+    font-family: 'AmidalafontRegular';   
+    color: var(--main-color);   
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 1.57;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.main-header {
+    padding-top: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.seeding__box {
+    margin-top: 20px;
+}
+
+#btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    padding: 21px 17px;
+    color: var(--main-color);       
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Open sans, sans-serif;
+    background-color: rgba(206, 123, 123, 0.9);
+
+    border-color: rgba(26, 18, 18, 0.5);
+
+    transition: var(--timing-function) var(--trans-duration);
+
+    margin-bottom: 220px;
+}
+
+#btn:hover {
+    background-color: rgba(253, 253, 253, 0.72);
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#random-number { 
+    color: var(--main-color);   
+    font-size: 30px
+}
+
+.footer {
+    margin-top: 470px;
+    padding-left: 35px;
+
+    font-size: 22px;
+}
+
+.footer__contacts {
+    display: block;
+    text-decoration: none;
+    color: var(--main-color);  
+}
+
+.footer__contacts:visited {
+
+    text-decoration: none;
+}
